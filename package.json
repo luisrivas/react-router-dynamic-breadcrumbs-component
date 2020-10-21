@@ -1,7 +1,7 @@
 {
-  "name": "react-router-dynamic-breadcrumbs",
-  "version": "2.2.0",
-  "description": "Breadcrumbs react component for react-router-v4",
+  "name": "react-router-dynamic-breadcrumbs-component",
+  "version": "2.3.0",
+  "description": "Breadcrumbs React component for react-router-v5",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,25 +10,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roya3000/react-router-dynamic-breadcrumbs.git"
+    "url": "git+https://github.com/luisrivas/react-router-dynamic-breadcrumbs-component.git"
   },
   "keywords": [
-    "react-router-4",
+    "react-router-5",
     "react",
     "breadcrumbs"
   ],
-  "author": "Alexander Mykolaichuk <alexmix3000@gmail.com>",
+  "author": "Luis Rivas <luis.rivas024@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/roya3000/react-router-dynamic-breadcrumbs/issues"
+    "url": "https://github.com/luisrivas/react-router-dynamic-breadcrumbs-component/issues"
   },
-  "homepage": "https://github.com/roya3000/react-router-dynamic-breadcrumbs#readme",
+  "homepage": "https://github.com/luisrivas/react-router-dynamic-breadcrumbs-component#readme",
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "react": "^15.6.1",
-    "react-router-dom": "^4.1.1"
+    "react": "^17.0.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

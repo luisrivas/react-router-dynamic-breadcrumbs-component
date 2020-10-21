@@ -6,15 +6,15 @@ import Breadcrumbs from './Breadcrumbs';
 const BreadcrumbsWrapper = (props) => {
   return (
     <Route path="/:path"
-           render={rest => <Breadcrumbs
-             mappedRoutes={props.mappedRoutes}
-             WrapperComponent={props.WrapperComponent}
-             ActiveLinkComponent={props.ActiveLinkComponent}
-             LinkComponent={props.LinkComponent}
-             rootName={props.rootName}
-             routeMatcherRegex={props.routeMatcherRegex}
-             {...rest}
-           />}
+      render={rest => <Breadcrumbs
+        mappedRoutes={props.mappedRoutes}
+        WrapperComponent={props.WrapperComponent}
+        ActiveLinkComponent={props.ActiveLinkComponent}
+        LinkComponent={props.LinkComponent}
+        rootName={props.rootName}
+        routeMatcherRegex={props.routeMatcherRegex}
+        {...rest}
+    />}
     />
   );
 };
