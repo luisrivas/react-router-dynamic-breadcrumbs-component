@@ -7,7 +7,7 @@
 [npm-badge-png]: https://nodei.co/npm/react-router-dynamic-breadcrumbs-component.png?mini=true
 [package-url]: https://npmjs.com/package/react-router-dynamic-breadcrumbs-component
 
-# React router breadcrumbs
+# React router breadcrumbs component
 
 Breadcrumbs react component for react-router-v5 with dynamic routing parameters, based on [react-router-dynamic-breadcrumbs](https://github.com/roya3000/react-router-dynamic-breadcrumbs-component)
 
@@ -24,9 +24,6 @@ yarn add react-router-dynamic-breadcrumbs-component
 ```
 
 ## Usage example
-
-By default react-router-dynamic-breadcrumbs-component use bootstrap.css breadcrumbs html markup. You need add bootstrap.css to your project for apply styling.
-
 ```javascript
 
 import React, { Component } from 'react';
@@ -34,7 +31,7 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom'
      
-import Breadcrumbs  from 'react-router-dynamic-breadcrumbs-component';   
+import Breadcrumbs from 'react-router-dynamic-breadcrumbs-component';   
   
 /**
 *  Create routes mapping
