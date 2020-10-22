@@ -22,6 +22,12 @@ var _BreadcrumbsItem2 = _interopRequireDefault(_BreadcrumbsItem);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function toTitleCase(str) {
+  return str.replace(/[-_]/g, ' ').replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
 var getPaths = function getPaths(pathname) {
   var rootName = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
@@ -36,7 +42,7 @@ var getPaths = function getPaths(pathname) {
     var currPath = prev + '/' + curr;
 
     paths.push({
-      name: curr,
+      name: toTitleCase(curr),
       path: currPath
     });
 

@@ -1,7 +1,16 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {isDefined, default as BreadcrumbsItem} from './BreadcrumbsItem';
+import { isDefined, default as BreadcrumbsItem } from './BreadcrumbsItem';
+
+function toTitleCase(str) {
+  return str.replace(/[-_]/g, ' ').replace(
+    /\w\S*/g,
+    function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
 
 const getPaths = (pathname, rootName = null) => {
   const paths = [
@@ -17,7 +26,7 @@ const getPaths = (pathname, rootName = null) => {
     const currPath = `${prev}/${curr}`;
 
     paths.push({
-      name: curr,
+      name: toTitleCase(curr),
       path: currPath,
     });
 

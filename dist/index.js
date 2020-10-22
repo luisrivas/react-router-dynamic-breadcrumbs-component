@@ -64,7 +64,7 @@ BreadcrumbsWrapper.defaultProps = {
 
 BreadcrumbsWrapper.propTypes = {
   mappedRoutes: _propTypes2.default.shape({}).isRequired,
-  WrapperComponent: _propTypes2.default.func,
+  WrapperComponent: _propTypes2.default.oneOfType([_propTypes2.default.object, _propTypes2.default.func]),
   ActiveLinkComponent: _propTypes2.default.func,
   LinkComponent: _propTypes2.default.func,
   rootName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func]),
